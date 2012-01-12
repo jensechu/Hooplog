@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="./style.css" rel="stylesheel" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>{{ page.title }}</title>
   </head>
   
   <body>
-    <h1>{{ page.title }}</h1>
-    <div id="content">
-      {{ content }}
+    <div id="wrap">
+      <div id="header">
+	<div class="nav">
+	  <ul>
+	    <li><a href="/home.html">home</a></li>
+	    <li><a href="/about.html">about</a></li>
+	    <li><a href="/contact.html">contact</a></li>
+	    <li><a href="/archive.html">archive</a></li>
+	  </ul>
+	</div>
+      </div>
+      
+      <div id="content">
+	{% for post in site.posts limit:5 %}
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	{{ post.content }}
+	<em>Posted on {{ post.date | date_to_long_string }}.</em>
+	{% endfor %}
+      </div>
     </div>
   </body>
 </html>
