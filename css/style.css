@@ -115,7 +115,7 @@ div#wrap > div {
     background-color: black;
     padding: 25px;
     margin-top: 25px;
-    height: 110px;
+    height: 100px;
     position: relative;
     top: 10px;
     border-top-right-radius: 25px;
@@ -251,6 +251,10 @@ h2 {
 }
 
 /* Twitter */
+
+.twtr-doc {
+    width: 209px;
+}
 
 .twtr-widget {
     right: 8px;
