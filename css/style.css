@@ -307,16 +307,13 @@ div.footer-box {
     font-size: 11pt;
     line-height: 20px;
     letter-spacing: 1px;
+    color: #eee;
 }
 
 .post a {
     font-family: vanilla;
     position: relative;
     bottom: 5px;
-}
-
-.post p {
-    color: white;
 }
 
 .post em {
