@@ -63,17 +63,8 @@ div#wrap > div {
     font-family: sans-serif;
     font-variant: small-caps;
     text-decoration: none;
-    color: #464646;
     font-size: 18pt;
-}
-
-
-a:link.selected {
-}
-
-
-.nav a:hover {
-    color: green;
+    color: #646464;
 }
 
 
@@ -161,6 +152,10 @@ h2 {
 }
 
 /* Header Colors */
+
+a:link.normal {
+    color: #646464;
+}
 
 a:link.teal {
     color: #39E7B2;

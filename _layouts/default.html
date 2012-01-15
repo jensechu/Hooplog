@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--- css --->
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!--- javascript --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
     <title>{{ page.title }}</title>
   </head>
   
@@ -15,9 +21,9 @@
 	  <div class="nav">
 	    <ul>
 	      <li><a href="/home.html" class="teal">home</a></li>
-	      <li><a href="/about.html">about</a></li>
-	      <li><a href="/contact.html">contact</a></li>
-	      <li><a href="/archive.html">archive</a></li>
+	      <li><a href="/about.html" class="orange">about</a></li>
+	      <li><a href="/contact.html" class="lime">contact</a></li>
+	      <li><a href="/archive.html" class="red">archive</a></li>
 	    </ul>
 	  </div>
 
@@ -26,7 +32,7 @@
       <div id="content">
 	  {% for post in site.posts limit:5 %}
 	  <div class="post">
-	    <h2><a href="{{ post.url }}" class="post-title">{{ post.title | downcase }}</a></h2>
+	    <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
 	    {{ post.content }}
 	    <em>Posted on {{ post.date | date_to_long_string }}.</em>
 	  </div>

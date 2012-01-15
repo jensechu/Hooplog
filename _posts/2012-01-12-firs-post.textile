@@ -1,6 +1,7 @@
 ---
 layout: default
 title: First Post
+color: teal
 ---
 
 Lalala Jensen is cool. This is my first post.
