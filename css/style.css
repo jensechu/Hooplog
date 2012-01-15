@@ -171,11 +171,13 @@ div.footer-box {
 .spotlight li:first-child:before {
     content: "song:";
     padding-right: 10px;
+    font-size: 8pt;
 }
 
 .spotlight .song-artist:before {
     content: "artist:";
     padding-right: 10px;
+    font-size: 8pt;
 }
 
 .spotlight .song-artist {
@@ -193,8 +195,8 @@ div.footer-box {
     position: relative;
     float: left;
     bottom: 1px;
-    left: 100px;
-    margin-right: 10px;
+    left: 85px;
+    margin-right: 0px;
 }
 
 #random-button a:hover {
@@ -207,8 +209,16 @@ div.footer-box {
     margin-right: 10px;
 }
 
+#recent-posts li {
+    list-style-type: square;
+}
+
 .twitter a {
     text-decoration: none;
+}
+
+.footer-box h4 {
+    padding-bottom: 4px;
 }
 
 .footer-box ul a {

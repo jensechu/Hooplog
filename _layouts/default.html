@@ -65,13 +65,13 @@
 	    <li><span class="song-artist">Michael Jackson.</span></li>
 	  </ul>
 	  <div id="random-button">
-	    <a href="#" id="random-song" class="orange">new song</a><span>&#8594;</span>
+	    <a href="#" id="random-song" class="orange">refresh song</a><span>&#10140;</span>
 	  </div>
 	</div>
 
 	<div class="footer-box">
 	  <h4 class="teal icon-nudge">&#10003; recent posts</h4>
-	  <ul>
+	  <ul id="recent-posts">
 	    {% for post in site.posts limit:4 %}
 	    <li><a href="{{ post.url }}" class="{{ post.color }}">{{ post.title }}</a></li>
 	    {% endfor %}
