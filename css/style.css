@@ -64,7 +64,6 @@ div#wrap > div {
     font-variant: small-caps;
     text-decoration: none;
     font-size: 18pt;
-    color: #646464;
 }
 
 
@@ -173,22 +172,22 @@ h2 {
 
 /* Header Colors */
 
-a:link.normal {
+.normal {
     color: #646464;
 }
 
-a:link.teal {
+.teal {
     color: #39E7B2;
 }
 
-a:link.orange {
+.orange {
     color: #FFBA03;
 }
 
-a:link.red {
+.red {
     color: #F74C48;
 }
 
-a:link.lime {
+.lime {
     color: #BAF21E;
 }
