@@ -56,8 +56,26 @@
 	{% include iteration.textile %}
 	{% endif %}
 
-      <div id="footer" class="{% if page.page %}footer-box{% endif %}">
-	<em>This is some footer text here.</em>
+      <div id="footer" class="{% if page.page %}footer-round{% endif %}">
+	<div class="footer-box">
+	  <h4>site map</h4>
+	  <p>High life minim synth craft beer put a bird on it, tempor gluten-free cosby sweater ad tattooed freegan. </p>
+	</div>
+
+	<div class="footer-box">
+	  <h4>recent posts</h4>
+	  <p>High life minim synth craft beer put a bird on it, tempor gluten-free cosby sweater ad tattooed freegan. 
+	</div>
+
+	<div class="footer-box">
+	  <h4>recent posts</h4>
+	  <ul>
+	    {% for post in site.posts limit:4 %}
+	    <li><a href="{{ post.url }}" class="{{ post.color }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</div>
+
       </div>
 
     </div>
