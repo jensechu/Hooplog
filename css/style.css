@@ -1,6 +1,6 @@
 @font-face {
     font-family: vanilla;
-    src: url('/media/Vanilla-webfont.ttf');
+    src: url('../media/Vanilla-webfont.ttf');
 }
 
 body {
