@@ -1,3 +1,6 @@
-_sites/*
+_site/*
+server/*
+*#
+.#*
 *~
 .DS_Store
