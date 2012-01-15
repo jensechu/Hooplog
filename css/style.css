@@ -3,20 +3,113 @@
     src: url('/media/Vanilla-webfont.ttf');
 }
 
+body {
+    background-color: #262626;
+    font-family: sans-serif;
+}
+
 #wrap {
-    width: 600px;
+    width: 680px;
     margin-left: auto; margin-right: auto;
+}
+
+div#wrap > div {
+}
+
+#header {
+    padding: 0px 25px 25px 25px;
+    position: relative;
+    bottom: 5px;
+}
+
+#title h2 {
+    position: relative;
+    float: left;
+    color: pink;
+    font-family: vanilla;
+    font-size: 26pt;
+    -webkit-text-stroke: 2px black;
+}
+
+.nav {
+}
+
+.nav ul {
+    margin: 0px;
+    position: relative;
+    float: right;
 }
 
 .nav li {
     display: inline;
+    margin-right: 30px;
+}
+
+.nav li:last {
+    margin-right: 0px;
 }
 
 .nav a:link {
-    font-family: vanilla;
+    font-family: sans-serif;
     text-decoration: none;
-    color: black;
-    margin-right: 50px;
-    text-stroke: 1px blue;
-    -webkit-text-stroke: 1px blue;
+    color: #C94D65;
+}
+
+#content {
+    margin-top: 10px;
+    position: relative;
+}
+
+.post a:link {
+    text-decoration: none;
+}
+
+.post {
+    background-color: black;
+    margin-top: 25px;
+    padding: 25px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 0px 10px #6e6e6e;
+}
+
+.post div:first-child {
+    margin-top: 0px;
+}
+
+.post h2 {
+    font-variant: small-caps;
+    border-bottom: 2px solid #bebebe;
+}
+
+.post p {
+    font-size: 10pt;
+}
+
+.post a:link {
+    color: #33ccff;
+}
+
+.post a:visited {
+    color: #33ccff;
+}
+
+.post a:hover {
+    color: red;
+}
+
+.post p {
+    color: white;
+}
+
+.post em {
+    color: #646464;
+    font-size: 9pt;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
 }
