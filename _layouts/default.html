@@ -16,11 +16,11 @@
       <div id="header">
 
 	<div id="title">
-	  <h2>hooplog</h2>
+	  <h2><a href="/">hooplog</a></h2>
 	</div>
 	  <div class="nav">
 	    <ul>
-	      <li><a href="/home.html" class="teal selected">home</a></li>
+	      <li><a href="/" class="teal selected">home</a></li>
 	      <li><a href="/about.html" class="orange">about</a></li>
 	      <li><a href="/contact.html" class="lime">contact</a></li>
 	      <li><a href="/archive.html" class="red">archive</a></li>
@@ -30,37 +30,30 @@
       </div>
       
       <div id="content">
+	{% if paginator.posts %}
 	  {% for post in paginator.posts %}
-	  <div class="post">
-	    <h2><a href="{{ post.url }}" class="{{ post.color }}">{{ post.title | downcase }}</a></h2>
-	    {{ post.content }}
-	    <em>Posted on {{ post.date | date_to_long_string }}.</em>
-	  </div>
+	    <div class="post">
+	      <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
+	      {{ post.content }}
+	      <em>Posted on {{ post.date | date_to_long_string }}.</em>
+	    </div>
 	  {% endfor %}
+	{% else %}
+	    <div class="post">
+	      <h2><a href="{{ page.url }}" class="post-title {{ page.color }}">{{ page.title | downcase }}</a></h2>
+	      {{ content }}
+	      <em>Posted on {{ page.date | date_to_long_string }}.</em>
+	    </div>
+	{% endif %}
       </div>
       
       <div id="pagination">
 
-
-	{% if paginator.previous_page %}
-	  {% if paginator.previous_page == 1 %}
-	   <a href="/" class="teal">&laquo; previous page</a>	    
-
-	   {% else %}
-	   <a href="/page{{ paginator.previous_page }}/">&laquo; previous page</a>
-	   {% endif %}
-
+	{% if paginator %}
+	{% include pagination.textile %}
 	{% else %}
-	<a href="#"></a>
+	{% include iteration.textile %}
 	{% endif %}
-
-	{% if paginator.next_page %}
-	<a href="/page{{ paginator.next_page }}/">next page &raquo;</a>
-	
-	{% else %}
-	<a href="#"></a>
-	{% endif %}
-
 
       </div>
 
