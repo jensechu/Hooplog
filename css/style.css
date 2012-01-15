@@ -176,6 +176,10 @@ div.footer-box {
     margin-right: 0px;
 }
 
+.star-nudge {
+    line-height: 25px;
+}
+
 /* Post Formatting */
 
 .post a:link {
