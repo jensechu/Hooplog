@@ -20,10 +20,10 @@
 	</div>
 	  <div class="nav">
 	    <ul>
-	      <li><a href="/" class="teal selected">home</a></li>
-	      <li><a href="/about.html" class="orange">about</a></li>
-	      <li><a href="/contact.html" class="lime">contact</a></li>
-	      <li><a href="/archive.html" class="red">archive</a></li>
+	      <li><a href="/" class="{% unless page.selected %}selected{% endunless %} teal">home</a></li>
+	      <li><a href="/about.html" class="{% if page.selected == "about" %}selected{% endif %} orange">about</a></li>
+	      <li><a href="/contact.html" class="{% if page.selected == "contact" %}selected{% endif %} lime">contact</a></li>
+	      <li><a href="/archive.html" class="{% if page.selected == "archive" %}selected{% endif %} red">archive</a></li>
 	    </ul>
 	  </div>
 
@@ -42,20 +42,19 @@
 	    <div class="post">
 	      <h2><a href="{{ page.url }}" class="post-title {{ page.color }}">{{ page.title | downcase }}</a></h2>
 	      {{ content }}
+	      {% if page.date %}
 	      <em>Posted on {{ page.date | date_to_long_string }}.</em>
+	      {% endif %}
 	    </div>
 	{% endif %}
       </div>
       
-      <div id="pagination">
-
-	{% if paginator %}
+        {% if page.page %}
+      	{% elsif paginator %}
 	{% include pagination.textile %}
 	{% else %}
 	{% include iteration.textile %}
 	{% endif %}
-
-      </div>
 
       <div id="footer">
 	<em>This is some footer text here.</em>

@@ -1,0 +1,13 @@
+      <div id="pagination">
+	{% if page.previous %}
+	<a href="{{ page.previous.url }}">&laquo; previous page</a>
+	{% else %}
+	<a href="#"></a>
+	{% endif %}
+
+	{% if page.next %}
+	<a href="{{ page.next.url }}">next page &raquo;</a>
+	{% else %}
+	<a href="#"></a>
+	{% endif %}
+      </div>	   
