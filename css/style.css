@@ -159,6 +159,54 @@ div.footer-box {
     line-height: 18px;
 }
 
+.spotlight ul {
+    margin: 0px;
+    list-style-type: none;
+    position: relative;
+    right: 40px;
+    top: 10px;
+    width: 194px;
+}
+
+.spotlight li:first-child:before {
+    content: "song:";
+    padding-right: 10px;
+}
+
+.spotlight .song-artist:before {
+    content: "artist:";
+    padding-right: 10px;
+}
+
+.spotlight .song-artist {
+    width: 193px;
+    margin-top: 5px;
+}
+
+#random-button {
+    padding-top: 25px;
+}
+
+#random-button a {
+    text-decoration: none;
+    font-size: 10pt;
+    position: relative;
+    float: left;
+    bottom: 1px;
+    left: 100px;
+    margin-right: 10px;
+}
+
+#random-button a:hover {
+    font-weight: bold;
+}
+
+#random-button span {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
 .twitter a {
     text-decoration: none;
 }
