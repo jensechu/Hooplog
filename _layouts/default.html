@@ -7,6 +7,7 @@
     <!--- javascript --->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="/js/main.js" type="text/javascript"></script>
+    <script src="/js/songs.js" type="text/javascript"></script>
 
     <title>{{ page.title }}</title>
   </head>
@@ -57,9 +58,9 @@
 	{% endif %}
 
       <div id="footer" class="{% if page.page %}footer-round{% endif %}">
-	<div class="footer-box">
+	<div class="footer-box spotlight">
 	  <h4 class="lime icon-nudge">&#9835; song spotlight</h4>
-	  <p>High life minim synth craft beer put a bird on it, tempor gluten-free cosby sweater ad tattooed freegan. </p>
+	  <p>"<a href="http://www.google.com" class="song-url"><span class="song-title">Thriller</span></a>", <span class="song-artist">Michael Jackson.</span></p>  
 	</div>
 
 	<div class="footer-box">
