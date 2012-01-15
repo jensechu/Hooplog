@@ -2,11 +2,11 @@
 <html>
   <head>
     <!--- css --->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 
     <!--- javascript --->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
 
     <title>{{ page.title }}</title>
   </head>
@@ -30,13 +30,38 @@
       </div>
       
       <div id="content">
-	  {% for post in site.posts limit:5 %}
+	  {% for post in paginator.posts %}
 	  <div class="post">
 	    <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
 	    {{ post.content }}
 	    <em>Posted on {{ post.date | date_to_long_string }}.</em>
 	  </div>
 	  {% endfor %}
+      </div>
+      
+      <div id="pagination">
+
+
+	{% if paginator.previous_page %}
+	  {% if paginator.previous_page == 1 %}
+	   <a href="/" class="teal">&laquo; previous page</a>	    
+
+	   {% else %}
+	   <a href="/page{{ paginator.previous_page }}/">&laquo; previous page</a>
+	   {% endif %}
+
+	{% else %}
+	<a href="#"></a>
+	{% endif %}
+
+	{% if paginator.next_page %}
+	<a href="/page{{ paginator.next_page }}/">next page &raquo;</a>
+	
+	{% else %}
+	<a href="#"></a>
+	{% endif %}
+
+
       </div>
 
       <div id="footer">
