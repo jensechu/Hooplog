@@ -36,7 +36,10 @@
 	    <div class="post">
 	      <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
 	      {{ post.content }}
-	      <em>Posted on {{ post.date | date_to_long_string }}.</em>
+	      <div id="post-info"><h3>category: <span class="{{ post.category }}">{{ post.category }}</span></h3><em>Posted on {{ post.date | date_to_long_string }}.</em>
+	      </div>
+
+	      
 	    </div>
 	  {% endfor %}
 	{% else %}
@@ -44,7 +47,8 @@
 	      <h2><a href="{{ page.url }}" class="post-title {{ page.color }}">{{ page.title | downcase }}</a></h2>
 	      {{ content }}
 	      {% if page.date %}
-	      <em>Posted on {{ page.date | date_to_long_string }}.</em>
+	      <div id="post-info"><h3>category: <span class="{{ page.category }}>{{ page.category }}</span></h3><em>Posted on {{ page.date | date_to_long_string }}.</em>
+		</div>
 	      {% endif %}
 	    </div>
 	{% endif %}
