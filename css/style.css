@@ -19,8 +19,8 @@ div#wrap > div {
 #header {
     padding: 0px 25px 25px 25px;
     background-color: black;
-    height: 50px;
     position: relative;
+    height: 50px;
     bottom: 5px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -44,7 +44,7 @@ div#wrap > div {
     position: relative;
     float: right;
     left: 10px;
-    width: 320px;
+    top: 20px;
 }
 
 .nav li {
@@ -58,13 +58,36 @@ div#wrap > div {
 
 .nav a:link {
     font-family: sans-serif;
+    font-variant: small-caps;
     text-decoration: none;
-    color: #C94D65;
+    color: #464646;
+    font-size: 18pt;
 }
+
+.nav a:hover {
+    color: green;
+}
+
 
 #content {
     margin-top: 10px;
     position: relative;
+}
+
+#footer {
+    background-color: black;
+    padding: 25px;
+    margin-top: 25px;
+    position: relative;
+    top: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    -webkit-border-top-radius: 25px;
+}
+
+#footer em {
+    color: #464646;
+    font-size: 9pt;
 }
 
 /* Post Formatting */
@@ -77,6 +100,7 @@ div#wrap > div {
     background-color: black;
     margin-top: 25px;
     padding: 25px;
+    -webkit-border-radius: 25px;
 }
 
 .post div:first-child {
@@ -91,6 +115,8 @@ div#wrap > div {
 .post p {
     margin-top: 25px;
     font-size: 10pt;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 
 .post a {
