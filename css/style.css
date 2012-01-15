@@ -30,7 +30,7 @@ div#wrap > div {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     -webkit-border-bottom-radius: 25px;
-    -webkit-box-shadow: 0px 0px 6px black;
+    -webkit-box-shadow: 0px 0px 12px black;
 }
 
 #title a {
@@ -86,7 +86,7 @@ div#wrap > div {
     padding: 25px;
     border: 2px solid #222;
     -webkit-border-radius: 25px;
-    -webkit-box-shadow: 0px 0px 6px black;
+    -webkit-box-shadow: 0px 0px 12px black;
 }
 
 #pagination a:link {
@@ -129,7 +129,7 @@ div#wrap > div {
     -webkit-border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     -webkit-border-top-left-radius: 25px;
-    -webkit-box-shadow: 0px 0px 6px black;
+    -webkit-box-shadow: 0px 0px 12px black;
 }
 
 .footer-round {
@@ -256,7 +256,7 @@ div.footer-box {
     margin-top: 25px;
     padding: 25px;
     -webkit-border-radius: 25px;
-    -webkit-box-shadow: 0px 0px 6px black;
+    -webkit-box-shadow: 0px 0px 12px black;
     border: 2px solid #222;
 }
 
