@@ -1,11 +1,11 @@
 $(document).ready(function(){
     
-    $(".nav a").each(function() {
+    $(".nav a:not(.selected)").each(function() {
 	$(this).data("color", $(this).attr("class"));
 	$(this).attr("class", "normal");
     });
 
-    $(".nav a").hover(
+    $(".nav a:not(.selected)").hover(
 	function() {
 	    $(this).attr("class", $(this).data("color"));
 	},
