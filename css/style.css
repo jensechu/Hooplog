@@ -142,7 +142,6 @@ div.footer-box {
 }
 
 .footer-box h4 {
-    color: #464646;
     font-variant: small-caps;
     font-size: 16pt;
     border-bottom: 2px solid #bebebe;
@@ -156,13 +155,12 @@ div.footer-box {
     font-size: 10pt;
 }
 
-.twitter a {
-    text-decoration: none;
+.footer-box li {
+    line-height: 18px;
 }
 
-.twitter h4:before {
-    content: "@";
-    font-size: 11pt;
+.twitter a {
+    text-decoration: none;
 }
 
 .footer-box ul a {
