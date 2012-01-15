@@ -9,7 +9,7 @@
     <div id="wrap">
       <div id="header">
 	<div id="title">
-	  <h2>title here</h2>
+	  <h2>hooplog</h2>
 	</div>
 	<div class="nav">
 	  <ul>
@@ -24,7 +24,7 @@
       <div id="content">
 	  {% for post in site.posts limit:5 %}
 	  <div class="post">
-	    <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
+	    <h2><a href="{{ post.url }}" class="post-title">{{ post.title | downcase }}</a></h2>
 	    {{ post.content }}
 	    <em>Posted on {{ post.date | date_to_long_string }}.</em>
 	  </div>
