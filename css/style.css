@@ -115,7 +115,7 @@ div#wrap > div {
     background-color: black;
     padding: 25px;
     margin-top: 25px;
-    height: 100px;
+    height: 90px;
     position: relative;
     top: 10px;
     border-top-right-radius: 25px;
@@ -127,11 +127,6 @@ div#wrap > div {
 
 .footer-round {
     border-radius: 25px;
-}
-
-#footer em {
-    color: #464646;
-    font-size: 9pt;
 }
 
 div.footer-box {
@@ -159,6 +154,15 @@ div.footer-box {
     position: relative;
     right: 24px;
     font-size: 10pt;
+}
+
+.twitter a {
+    text-decoration: none;
+}
+
+.twitter h4:before {
+    content: "@";
+    font-size: 11pt;
 }
 
 .footer-box ul a {
@@ -244,4 +248,28 @@ h2 {
 
 .lime {
     color: #BAF21E;
+}
+
+/* Twitter */
+
+.twtr-widget {
+    right: 8px;
+    margin-top: 5px;
+}
+
+.twtr-tweet-text {
+    font-size: 10pt;
+    font-family: sans-serif;
+}
+
+#tweet-id-1 em {
+    color: black;
+}
+
+.twtr-ft, .twtr-hd, .twtr-user, .twtr-reply, .twtr-rt, .twtr-fav, .twtr-timestamp {
+    display: none;
+}
+
+.twtr-tweet-wrap {
+    padding: 0px; !important
 }
