@@ -24,6 +24,9 @@ div#wrap > div {
     position: relative;
     height: 50px;
     bottom: 5px;
+    border-bottom: 2px solid #222;
+    border-right: 2px solid #222;
+    border-left: 2px solid #222;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     -webkit-border-bottom-radius: 25px;
@@ -81,6 +84,7 @@ div#wrap > div {
     background-color: black;
     margin-top: 25px;
     padding: 25px;
+    border: 2px solid #222;
     -webkit-border-radius: 25px;
     -webkit-box-shadow: 0px 0px 6px black;
 }
@@ -113,11 +117,14 @@ div#wrap > div {
 
 #footer {
     background-color: black;
-    padding: 25px;
+    padding: 23px;
     margin-top: 25px;
     height: 100px;
     position: relative;
     top: 10px;
+    border-top: 2px solid #222;    
+    border-right: 2px solid #222;
+    border-left: 2px solid #222;
     border-top-right-radius: 25px;
     -webkit-border-top-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -250,6 +257,7 @@ div.footer-box {
     padding: 25px;
     -webkit-border-radius: 25px;
     -webkit-box-shadow: 0px 0px 6px black;
+    border: 2px solid #222;
 }
 
 .post h2 {
