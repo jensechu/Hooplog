@@ -58,12 +58,12 @@
 
       <div id="footer" class="{% if page.page %}footer-round{% endif %}">
 	<div class="footer-box">
-	  <h4 class="lime">&#9835; song spotlight</h4>
+	  <h4 class="lime icon-nudge">&#9835; song spotlight</h4>
 	  <p>High life minim synth craft beer put a bird on it, tempor gluten-free cosby sweater ad tattooed freegan. </p>
 	</div>
 
 	<div class="footer-box">
-	  <h4 class="teal star-nudge">&#10003; recent posts</h4>
+	  <h4 class="teal icon-nudge">&#10003; recent posts</h4>
 	  <ul>
 	    {% for post in site.posts limit:4 %}
 	    <li><a href="{{ post.url }}" class="{{ post.color }}">{{ post.title }}</a></li>
