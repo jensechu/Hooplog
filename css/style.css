@@ -18,19 +18,22 @@ div#wrap > div {
 
 #header {
     padding: 0px 25px 25px 25px;
+    background-color: black;
+    height: 50px;
     position: relative;
     bottom: 5px;
-    background-color: black;
-    height: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     -webkit-border-bottom-radius: 25px;
 }
 
 #title h2 {
-    position: relative;
-    float: left;
     color: pink;
     font-family: vanilla;
     font-size: 26pt;
+    padding-top: 15px;
+    position: relative;
+    float: left;
     -webkit-text-stroke: 2px black;
 }
 
@@ -41,6 +44,8 @@ div#wrap > div {
     margin: 0px;
     position: relative;
     float: right;
+    left: 10px;
+    width: 320px;
 }
 
 .nav li {
@@ -62,6 +67,8 @@ div#wrap > div {
     margin-top: 10px;
     position: relative;
 }
+
+/* Post Formatting */
 
 .post a:link {
     text-decoration: none;
