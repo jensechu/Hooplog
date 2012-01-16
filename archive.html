@@ -6,47 +6,27 @@ title: Archive
 selected: archive
 ---
 
+<script>
+  $(function() {
+      $("#accordion").accordion();
+  });
+</script>
 
-{% if site.categories.self %}
-<div class="sorted">
-  <h2>Self</h2>
-  <ul>
-    {% for post in site.categories.self %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div id="accordion">
+  {% for cat_posts in site.categories %} 
+  <h4><a href="#" class="{{ cat_posts[0] }}">{{ cat_posts[0] }}</a></h4>
+  <div>
+    <ul>
+      {% for post in cat_posts[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
 </div>
-{% endif %}
 
-{% if site.categories.body %}
-<div class="sorted">
-  <h2>Body</h2>
-  <ul>
-    {% for post in site.categories.body %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-
-{% if site.categories.poi %}
-<div class="sorted">
-    <h2>Poi</h2>
-  <ul>
-    {% for post in site.categories.poi %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-
-{% if site.categories.isolations %}
-<div class="sorted">
-  <h2>Isolations</h2>
-  <ul>
-    {% for post in site.categories.isolations %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}

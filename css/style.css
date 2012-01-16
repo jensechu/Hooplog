@@ -286,19 +286,19 @@ div.footer-box {
     margin-left: 5px;
 }
 
-.post h3 span.self {
+.self {
     color: #ff6699;
 }
 
-.post h3 span.body {
+.body {
     color: yellow;
 }
 
-.post h3 span.isolation {
+.isolation {
     color: blue;
 }
 
-.post h3 span.poi {
+.poi {
     color: orange;
 }
 
@@ -381,4 +381,44 @@ h2 {
 
 .twtr-tweet-wrap {
     padding: 0px; !important
+}
+
+.ui-state-focus { outline: none; }
+
+/* Accordion */
+
+#accordion {
+    margin-top: 25px;
+}
+
+#accordion h4 a:link {
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 16pt;
+}
+
+#accordion h4, ul {
+    margin: 0px;
+}
+
+#accordion ul {
+    list-style-type: square;
+    color: #eee;
+}
+
+#accordion li a {
+    font-size: 10pt;
+    color: #eee;
+    font-family: sans-serif;
+    position: relative;
+    top: 0px;
+}
+
+#accordion div {
+    background-color: #262626;
+    box-shadow: 0px 0px #eee;
+    border-radius: 25px;
+    min-height: 25px;
+    padding: 10px;
+    margin-bottom: 25px;
 }
