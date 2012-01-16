@@ -6,4 +6,47 @@ title: Archive
 selected: archive
 ---
 
-<p>Archive coming soon</p>
+
+{% if site.categories.self %}
+<div class="sorted">
+  <h2>Self</h2>
+  <ul>
+    {% for post in site.categories.self %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.categories.body %}
+<div class="sorted">
+  <h2>Body</h2>
+  <ul>
+    {% for post in site.categories.body %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.categories.poi %}
+<div class="sorted">
+    <h2>Poi</h2>
+  <ul>
+    {% for post in site.categories.poi %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.categories.isolations %}
+<div class="sorted">
+  <h2>Isolations</h2>
+  <ul>
+    {% for post in site.categories.isolations %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

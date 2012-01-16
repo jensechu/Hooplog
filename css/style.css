@@ -314,6 +314,7 @@ div.footer-box {
     font-family: vanilla;
     position: relative;
     bottom: 5px;
+    -moz-font-weight: lighter;
 }
 
 .post em {

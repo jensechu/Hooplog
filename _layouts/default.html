@@ -46,7 +46,7 @@
 	  </div>
 
       </div>
-      
+
       <div id="content">
 	{% if paginator.posts %}
 	  {% for post in paginator.posts %}
@@ -55,8 +55,6 @@
 	      {{ post.content }}
 	      <div id="post-info"><h3>category: <span class="{{ post.category }}">{{ post.category }}</span></h3><em>Posted on {{ post.date | date_to_long_string }}.</em>
 	      </div>
-
-	      
 	    </div>
 	  {% endfor %}
 	{% else %}
