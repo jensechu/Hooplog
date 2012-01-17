@@ -5,27 +5,31 @@ color: lime
 title: Archive
 selected: archive
 ---
+<div id="tabs">
+   <ul>
+     {% for cat_posts in site.categories %} 
+     <li><a href="#tab-{{ cat_posts[0] }}">{{ cat_posts[0] }}</a></li>
+     {% endfor %}
+   </ul>
+   {% for cat_posts in site.categories %} 
+   <div id="tab-{{ cat_posts[0] }}">
+     <ul class="tab-list">
+       {% for post in cat_posts[1] %}
+       <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <div><p>{{ post.content | strip_html | truncate, 160 }}</p></div></li>
 
-<script>
-  $(function() {
-      $("#accordion").accordion();
-  });
-</script>
+       <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <div><p>{{ post.content | strip_html | truncate, 160 }}</p></div></li>
 
-<div id="accordion">
-  {% for cat_posts in site.categories %} 
-  <h4><a href="#" class="{{ cat_posts[0] }}">{{ cat_posts[0] }}</a></h4>
-  <div>
-    <ul>
-      {% for post in cat_posts[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a><p>{{ post.content | strip_html | truncate, 200 }}</p></li>
-      <li><a href="{{ post.url }}">{{ post.title }}</a><p>{{ post.content | strip_html | truncate, 200 }}</p></li>
-      <li><a href="{{ post.url }}">{{ post.title }}</a><p>{{ post.content | strip_html | truncate, 200 }}</p></li>
-      <li><a href="{{ post.url }}">{{ post.title }}</a><p>{{ post.content | strip_html | truncate, 200 }}</p></li>
-      <li><a href="{{ post.url }}">{{ post.title }}</a><p>{{ post.content | strip_html | truncate, 200 }}</p></li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endfor %}
+       <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <div><p>{{ post.content | strip_html | truncate, 160 }}</p></div></li>
+
+       <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <div><p>{{ post.content | strip_html | truncate, 160 }}</p></div></li>
+       {% endfor %}
+     </ul>
+   </div>
+   {% endfor %}
 </div>
+
 

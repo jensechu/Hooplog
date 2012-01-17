@@ -1,0 +1,66 @@
+.ui-tabs-nav.ui-widget-header {
+    background-color: black;
+    border: 0px;
+}
+
+.ui-tabs {
+    padding: 0px;
+}
+
+#tabs ul {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#tabs .ui-state-active {
+    background: black;
+    border: none;
+}
+
+#tabs .ui-state-active a {
+    border-bottom: 2px solid #bebebe;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 18pt;
+}
+
+#tabs .ui-state-default {
+    background: black;
+    border: none;
+}
+
+#tabs .ui-state-default a {
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 18pt;
+}
+
+.tab-list li:nth-child(even) {
+    background-color: #262626;
+}
+
+.tab-list li {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tab-list a {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#tabs p {
+    margin-top: 0px;
+    letter-spacing: 0px;
+}
+
+#tab-self a {
+    color: #ff6699;
+}
+
+
+#tab-body a {
+    color: yellow;
+}

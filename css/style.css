@@ -385,54 +385,10 @@ h2 {
 
 .ui-state-focus { outline: none; }
 
-/* Accordion */
+/* Tabs */
 
-#accordion {
-    margin-top: 25px;
-}
-
-#accordion h4 a:link {
-    font-family: sans-serif;
-    font-variant: small-caps;
-    font-size: 16pt;
-}
-
-#accordion h4, ul {
-    margin: 0px;
-}
-
-#accordion ul {
-    list-style-type: square;
-    color: #eee;
-}
-
-#accordion li {
-    padding: 10px;
-}
-
-#accordion li:nth-child(even) {
+#tabs {
+    min-height: 400px;
     background-color: black;
-    border-radius: 5px;
-}
-
-#accordion li a {
-    font-size: 12pt;
-    color: #ff6699;
-    font-family: sans-serif;
-    position: relative;
-    top: 0px;
-}
-
-#accordion div {
-    background-color: #262626;
-    box-shadow: 0px 0px #eee;
-    border-radius: 25px;
-    min-height: 25px;
-    padding: 10px;
-    margin-bottom: 25px;
-}
-
-#accordion p {
-    margin-top: 5px;
-    color: #eee;
+    border: 0px;
 }

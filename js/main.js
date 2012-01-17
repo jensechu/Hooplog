@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    
+    $("#tabs").tabs();
+
     $(".nav a:not(.selected)").each(function() {
 	$(this).data("color", $(this).attr("class"));
 	$(this).attr("class", "normal");
