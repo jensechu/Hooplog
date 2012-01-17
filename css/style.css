@@ -406,9 +406,18 @@ h2 {
     color: #eee;
 }
 
+#accordion li {
+    padding: 10px;
+}
+
+#accordion li:nth-child(even) {
+    background-color: black;
+    border-radius: 5px;
+}
+
 #accordion li a {
-    font-size: 10pt;
-    color: #eee;
+    font-size: 12pt;
+    color: #ff6699;
     font-family: sans-serif;
     position: relative;
     top: 0px;
@@ -421,4 +430,9 @@ h2 {
     min-height: 25px;
     padding: 10px;
     margin-bottom: 25px;
+}
+
+#accordion p {
+    margin-top: 5px;
+    color: #eee;
 }
