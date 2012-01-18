@@ -262,7 +262,7 @@ div.footer-box {
 }
 
 .post h2 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-variant: small-caps;
     border-bottom: 2px solid #bebebe;
 }
@@ -313,7 +313,6 @@ div.footer-box {
 .post a {
     font-family: vanilla;
     position: relative;
-    bottom: 5px;
     -moz-font-weight: lighter;
 }
 
@@ -391,4 +390,15 @@ h2 {
     min-height: 400px;
     background-color: black;
     border: 0px;
+}
+
+/* About */ 
+.content-link {
+    position: relative;
+    bottom: 0px;
+    margin: 0px 5px;
+}
+
+a:hover.content-link {
+    color: #ff6699;
 }
