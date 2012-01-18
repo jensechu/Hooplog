@@ -6,16 +6,16 @@ title: Archive
 selected: archive
 ---
 <div id="tabs">
-   <ul>
+   <ul id="tabs-head">
      {% for cat_posts in site.categories %} 
-     <li><a href="#tab-{{ cat_posts[0] }}">{{ cat_posts[0] }}</a></li>
+     <li class="{{ cat_posts[0] }}"><a href="#tab-{{ cat_posts[0] }}" class="{{ cat_posts[0] }}">{{ cat_posts[0] }}</a></li>
      {% endfor %}
    </ul>
    {% for cat_posts in site.categories %} 
    <div id="tab-{{ cat_posts[0] }}">
      <ul class="tab-list">
        {% for post in cat_posts[1] %}
-       <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <li><a href="{{ post.url }}" class="{{ cat_posts[0] }}">{{ post.title }}</a>
        <div><p>{{ post.content | strip_html | truncate, 160 }}</p></div></li>
 
        <li><a href="{{ post.url }}">{{ post.title }}</a>

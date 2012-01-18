@@ -15,6 +15,7 @@
 #tabs ul {
     padding: 0px;
     margin: 0px 0px 0px 0px;
+    list-style-type: none;
 }
 
 #tabs .ui-state-active {
@@ -30,6 +31,15 @@
     font-size: 18pt;
 }
 
+#tabs .ui-state-active poop {
+    border-bottom: 2px solid #bebebe;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 18pt;
+}
+
+
 #tabs .ui-state-default {
     background: black;
     border: none;
@@ -39,6 +49,25 @@
     font-family: sans-serif;
     font-variant: small-caps;
     font-size: 18pt;
+}
+
+#tabs li.self a {
+    color: #ff6699;
+}
+
+
+#tabs li.body a {
+    color: yellow;
+}
+
+
+#tabs li.poi a {
+    color: #BAF21E;
+}
+
+
+#tabs li.isolation a {
+    color: #39E7B2;
 }
 
 .tab-list li:nth-child(even) {
@@ -56,16 +85,20 @@
     font-weight: bold;
 }
 
+.tab-list a:hover {
+    font-weight: bold;
+}
+
 #tabs p {
     margin-top: 0px;
     letter-spacing: 0px;
+}
+
+#tab-body a {
+    color: yellow;
 }
 
 #tab-self a {
     color: #ff6699;
 }
 
-
-#tab-body a {
-    color: yellow;
-}

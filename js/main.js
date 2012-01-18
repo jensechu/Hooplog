@@ -6,7 +6,6 @@ $(document).ready(function(){
 	$(this).attr("class", "normal");
     });
 
-
     $(".nav a:not(.selected)").hover(
 	function() {
 	    $(this).attr("class", $(this).data("color"));
