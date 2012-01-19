@@ -31,15 +31,6 @@
     font-size: 18pt;
 }
 
-#tabs .ui-state-active poop {
-    border-bottom: 2px solid #bebebe;
-    padding-bottom: 10px;
-    font-family: sans-serif;
-    font-variant: small-caps;
-    font-size: 18pt;
-}
-
-
 #tabs .ui-state-default {
     background: black;
     border: none;
@@ -57,17 +48,17 @@
 
 
 #tabs li.body a {
-    color: yellow;
+    color: #39E7B2;
 }
 
 
 #tabs li.poi a {
-    color: #BAF21E;
+    color: #FFBA03;
 }
 
 
-#tabs li.isolation a {
-    color: #39E7B2;
+#tabs li.isolations a {
+    color: #BAF21E;
 }
 
 .tab-list li:nth-child(even) {
@@ -95,10 +86,17 @@
 }
 
 #tab-body a {
-    color: yellow;
+    color: #39E7B2;
 }
 
 #tab-self a {
     color: #ff6699;
 }
 
+#tab-poi a {
+    color: #FFBA03;
+}
+
+#tab-isolations a {
+    color: #BAF21E;
+}

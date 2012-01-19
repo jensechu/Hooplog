@@ -67,7 +67,7 @@
 	      <h2><a href="{{ page.url }}" class="post-title {{ page.color }}">{{ page.title | downcase }}</a></h2>
 	      {{ content }}
 	      {% if page.date %}
-	      <div id="post-info"><h3>category: <span class="{{ page.category }}">{{ page.category }}</span></h3><em>Posted on {{ page.date | date_to_long_string }}.</em>
+	      <div id="post-info"><h3>category: <span class="{{ page.category }}"><a href="/archive.html#tab-{{ post.category }}">{{ page.category }}</a></span></h3><em>Posted on {{ page.date | date_to_long_string }}.</em>
 		</div>
 	      {% endif %}
 	    </div>
