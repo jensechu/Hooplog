@@ -34,15 +34,17 @@ div#wrap > div {
 }
 
 #title a {
-    color: #ff6699;
-    font-family: vanilla;
-    font-size: 28pt;
-    padding-top: 15px;
+    background: url('../media/images/header-normal.png') no-repeat;
+    margin-top: 15px;
     position: relative;
     float: left;
+    width: 185px;
+    height: 45px;
     text-decoration: none;
-    text-stroke: 2px black;
-    width: 100px;
+}
+
+#title a:hover {
+    background: url('../media/images/header-hover.png') no-repeat;
 }
 
 #title a:hover {
@@ -54,14 +56,13 @@ div#wrap > div {
 .nav ul {
     margin: 0px;
     position: relative;
-    float: right;
-    left: 25px;
+    left: 45px;
     top: 25px;
 }
 
 .nav li {
     display: inline;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .nav li:last {
@@ -265,6 +266,9 @@ div.footer-box {
     padding-bottom: 15px;
     font-variant: small-caps;
     border-bottom: 2px solid #bebebe;
+    font-family: vanilla;
+    position: relative;
+    -moz-font-weight: lighter;
 }
 
 .post h3 {
@@ -286,19 +290,23 @@ div.footer-box {
     margin-left: 5px;
 }
 
-.self {
+#post-info a:hover {
+    border-bottom: 1px solid;
+}
+
+.self a {
     color: #ff6699;
 }
 
-.body {
+.body a {
     color: yellow;
 }
 
-.isolation {
+.isolation a {
     color: blue;
 }
 
-.poi {
+.poi a {
     color: orange;
 }
 
@@ -311,9 +319,7 @@ div.footer-box {
 }
 
 .post a {
-    font-family: vanilla;
-    position: relative;
-    -moz-font-weight: lighter;
+
 }
 
 .post em {
@@ -397,6 +403,7 @@ h2 {
     position: relative;
     bottom: 0px;
     margin: 0px 5px;
+    font-family: vanilla;
 }
 
 a:hover.content-link {

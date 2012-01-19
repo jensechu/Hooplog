@@ -1,4 +1,12 @@
+function firefox_detection(){
+    if ( $.browser.mozilla ) {
+	$("#content h2").css( "font-weight","lighter" );
+    }
+}
+
 $(document).ready(function(){
+    firefox_detection();
+
     $("#tabs").tabs();
 
     $(".nav a:not(.selected)").each(function() {

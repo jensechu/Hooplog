@@ -39,7 +39,7 @@
       <div id="header">
 
 	<div id="title">
-	  <h2><a href="/">hooplog</a></h2>
+	  <h2><a href="/">&nbsp;</a></h2>
 	</div>
 	  <div class="nav">
 	    <ul>
@@ -58,7 +58,7 @@
 	    <div class="post">
 	      <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
 	      {{ post.content }}
-	      <div id="post-info"><h3>category: <span class="{{ post.category }}">{{ post.category }}</span></h3><em>Posted on {{ post.date | date_to_long_string }}.</em>
+	      <div id="post-info"><h3>category: <span class="{{ post.category }}"><a href="/archive.html#tab-{{ post.category }}">{{ post.category }}</a></span></h3><em>Posted on {{ post.date | date_to_long_string }}.</em>
 	      </div>
 	    </div>
 	  {% endfor %}
