@@ -274,6 +274,11 @@ div.footer-box {
     font-variant: small-caps;
 }
 
+.post img {
+    width: 625px;
+    border-bottom: 2px solid #bebebe;
+}
+
 #post-info {
     width: 626px;
     height: 30px;
@@ -323,6 +328,16 @@ div.footer-box {
     top: 15px;
     float: right;
 }
+
+
+em.caption {
+    position: relative;
+    float: left;
+    top: 0px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
 
 h1 {
     margin: 0px;
@@ -416,7 +431,7 @@ a:hover.content-link {
 
 #contact {
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 
 #social-hello {
@@ -424,6 +439,14 @@ a:hover.content-link {
     position: relative;
     float: left;
     margin-right: 25px;
+}
+
+#social-hello a {
+    color: #ff6699;
+}
+
+#social-hello a:hover {
+    border-bottom: 1px solid;
 }
 
 #contact li {
@@ -443,6 +466,6 @@ a:hover.content-link {
     border-bottom: 1px solid;
 }
 
-#contact li:nth-child(5) {
+#contact li:nth-child(6) {
     list-style-type: none;
 }
