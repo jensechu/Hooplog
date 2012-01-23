@@ -2,7 +2,7 @@
 layout: post
 category: self
 title: A Personal Learning Process
-color: lime
+color: teal
 ---
 
 It flusters me when I set my sites on a trick but as far as I can tell the hooper I'm watching is performing pure maigc. The illusion created is beyond anything I can iron out in my head, but I'll be damned if that will stop me from learning it! That is the drive I carry with me through the bruises and despair.
