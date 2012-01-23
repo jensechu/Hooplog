@@ -484,6 +484,10 @@ a:hover.content-link {
 
 /* Disqus */
 
-.dsq-content a {
+.dsq-content a:hover {
     color: #ff6699;
+}
+
+#dsq-comments a {
+    color: #bebebe;
 }
