@@ -481,3 +481,9 @@ a:hover.content-link {
 #contact li:nth-child(5) {
     list-style-type: none;
 }
+
+/* Disqus */
+
+.dsq-content a {
+    color: #ff6699;
+}
