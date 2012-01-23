@@ -492,6 +492,10 @@ a:hover.content-link {
     color: #BAF21E;
 }
 
+.dsq-brlink a:visited {
+    color: #BAF21E;
+}
+
 .dsq-comment-header {
     color: #ff6699;
 }
