@@ -56,6 +56,10 @@
     color: #FFBA03;
 }
 
+#tabs li.hoops a {
+    color: #C0ADDB;
+}
+
 
 #tabs li.isolations a {
     color: #BAF21E;
@@ -99,4 +103,8 @@
 
 #tab-isolations a {
     color: #BAF21E;
+}
+
+#tab-hoops a {
+    color: #C0ADDB;
 }

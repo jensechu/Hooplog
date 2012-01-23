@@ -309,6 +309,10 @@ div.footer-box {
     color: orange;
 }
 
+.hoops a {
+    color: #C0ADDB;
+}
+
 .post p {
     margin-top: 25px;
     font-size: 10pt;
@@ -367,6 +371,10 @@ h2 {
 
 .lime {
     color: #BAF21E;
+}
+
+.purple {
+    color: #C0ADDB;
 }
 
 .pink {
