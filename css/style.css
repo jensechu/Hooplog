@@ -484,6 +484,14 @@ a:hover.content-link {
 
 /* Disqus */
 
+.dsq-options a {
+    color: #BAF21E;
+}
+
+.dsq-brlink a {
+    color: #BAF21E;
+}
+
 .dsq-comment-header {
     color: #ff6699;
 }
