@@ -488,11 +488,7 @@ a:hover.content-link {
     color: #BAF21E;
 }
 
-.dsq-brlink a {
-    color: #BAF21E;
-}
-
-.dsq-brlink a:visited {
+.dsq-brlink {
     color: #BAF21E;
 }
 
