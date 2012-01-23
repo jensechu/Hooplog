@@ -203,7 +203,7 @@ div.footer-box {
 }
 
 #random-button a:hover {
-    font-weight: bold;
+    border-bottom: 1px solid;
 }
 
 #random-button span {
@@ -229,8 +229,8 @@ div.footer-box {
 }
 
 .footer-box ul a:hover {
+    border-bottom: 1px solid;
     text-decoration: none;
-    font-weight: bold;
 }
 
 #footer div.footer-box:last-child {
