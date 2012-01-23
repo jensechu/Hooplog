@@ -449,6 +449,10 @@ a:hover.content-link {
     margin-right: 25px;
 }
 
+#social-hello a:last-child {
+    color: #BAF21E;
+}
+
 #social-hello a {
     color: #ff6699;
 }
@@ -474,6 +478,6 @@ a:hover.content-link {
     border-bottom: 1px solid;
 }
 
-#contact li:nth-child(6) {
+#contact li:nth-child(5) {
     list-style-type: none;
 }
