@@ -41,44 +41,60 @@
 	<div id="title">
 	  <h2><a href="/">&nbsp;</a></h2>
 	</div>
-	  <div class="nav">
-	    <ul>
-	      <li><a href="/" class="{% unless page.selected %}selected{% endunless %} teal">home</a></li>
-	      <li><a href="/about.html" class="{% if page.selected == "about" %}selected{% endif %} orange">about</a></li>
-	      <li><a href="/archive.html" class="{% if page.selected == "archive" %}selected{% endif %} lime">archives</a></li>
-	      <li><a href="/contact.html" class="{% if page.selected == "contact" %}selected{% endif %} red">contact</a></li>
-	    </ul>
-	  </div>
+	<div class="nav">
+	  <ul>
+	    <li><a href="/" class="{% unless page.selected %}selected{% endunless %} teal">home</a></li>
+	    <li><a href="/about.html" class="{% if page.selected == "about" %}selected{% endif %} orange">about</a></li>
+	    <li><a href="/archive.html" class="{% if page.selected == "archive" %}selected{% endif %} lime">archives</a></li>
+	    <li><a href="/contact.html" class="{% if page.selected == "contact" %}selected{% endif %} red">contact</a></li>
+	  </ul>
+	</div>
 
       </div>
 
       <div id="content">
 	{% if paginator.posts %}
-	  {% for post in paginator.posts %}
-	    <div class="post">
-	      <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
-	      <div id="post-info"><h3>category: <span class="{{ post.category }}"><a href="/archive.html#tab-{{ post.category }}">{{ post.category }}</a></span></h3><em>Posted on {{ post.date | date_to_long_string }}.</em></div>
-	      {{ post.content }}
+	{% for post in paginator.posts %}
+	<div class="post">
+	  <h2><a href="{{ post.url }}" class="post-title {{ post.color }}">{{ post.title | downcase }}</a></h2>
+	  <div id="post-info"><h3>category: <span class="{{ post.category }}"><a href="/archive.html#tab-{{ post.category }}">{{ post.category }}</a></span></h3><em>Posted on {{ post.date | date_to_long_string }}.</em></div>
+	  {{ post.content }}
 
-	    </div>
-	  {% endfor %}
+	</div>
+	{% endfor %}
 	{% else %}
-	    <div class="post">
-	      <h2><a href="{{ page.url }}" class="post-title {{ page.color }}">{{ page.title | downcase }}</a></h2>
-	      {% if page.date %}
-	      <div id="post-info"><h3>category: <span class="{{ page.category }}"><a href="/archive.html#tab-{{ post.category }}">{{ page.category }}</a></span></h3><em>Posted on {{ page.date | date_to_long_string }}.</em></div>
-	      {% endif %}
-	      {{ content }}
-	    </div>
+	<div class="post">
+	  <h2><a href="{{ page.url }}" class="post-title {{ page.color }}">{{ page.title | downcase }}</a></h2>
+	  {% if page.date %}
+	  <div id="post-info"><h3>category: <span class="{{ page.category }}"><a href="/archive.html#tab-{{ post.category }}">{{ page.category }}</a></span></h3><em>Posted on {{ page.date | date_to_long_string }}.</em></div>
+	  {% endif %}
+	  {{ content }}
+	  {% if page.date %}
+	  <div id="disqus_thread"></div>
+	  <script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	    var disqus_shortname = 'hooplog; // required: replace example with your forum shortname
+
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	  </script>
+	  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	  {% endif %}
+	</div>
 	{% endif %}
       </div>
       
-        {% if page.page %}
-      	{% elsif paginator %}
-	{% include pagination.textile %}
-	{% else %}
-	{% include iteration.textile %}
-	{% endif %}
+      {% if page.page %}
+      {% elsif paginator %}
+      {% include pagination.textile %}
+      {% else %}
+      {% include iteration.textile %}
+      {% endif %}
 
       <div id="footer" class="{% if page.page %}footer-round{% endif %}">
 	<div class="footer-box spotlight">
