@@ -485,7 +485,9 @@ a:hover.content-link {
 /* Disqus */
 
 #disqus_thread {
-    margin-top: 65px;
+    border-top: 2px solid #bebebe;
+    padding-top: 15px;
+    margin-top: 45px;
 }
 
 .dsq-options a {
