@@ -34,7 +34,7 @@ div#wrap > div {
 }
 
 #title a {
-
+    background: url('../media/images/header-normal.png') no-repeat;
     margin-top: 15px;
     position: relative;
     float: left;
