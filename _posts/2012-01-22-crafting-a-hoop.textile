@@ -2,7 +2,7 @@
 layout: post
 category: hoops
 title: Crafting A Hoop
-color: lime
+color: teal
 ---
 
 My guide is thorough, I didn't want to cause someone to make an ugly hoop!
