@@ -7,6 +7,14 @@ function firefox_detection(){
 $(document).ready(function(){
     firefox_detection();
 
+    $(".header-swap").hover(
+	function(){
+	    $(this).attr({ src: "../media/images/header-hover.png"});
+	},
+	function(){
+	    $(this).attr({ src: "../media/images/header-normal.png"});
+	});
+
     $("#tabs").tabs();
 
     $(".nav a:not(.selected)").each(function() {
