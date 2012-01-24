@@ -9,10 +9,10 @@ $(document).ready(function(){
 
     $(".header-swap").hover(
 	function(){
-	    $(this).attr({ src: "../media/images/header-hover.png"});
+	    $(this).attr({ src: "/media/images/header-hover.png"});
 	},
 	function(){
-	    $(this).attr({ src: "../media/images/header-normal.png"});
+	    $(this).attr({ src: "/media/images/header-normal.png"});
 	});
 
     $("#tabs").tabs();
