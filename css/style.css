@@ -484,6 +484,10 @@ a:hover.content-link {
 
 /* Disqus */
 
+#disqus_thread {
+    margin-top: 65px;
+}
+
 .dsq-options a {
     color: #BAF21E;
 }
