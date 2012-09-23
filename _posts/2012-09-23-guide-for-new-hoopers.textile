@@ -43,8 +43,8 @@ A lot of hoopers have the trick pony syndrome. They can do the coolest tricks in
 Please feel free to contact me, leave comments, whatever you want! It would mean a lot to mean to hear how this guide helped, or didn't help you. Any of you more skilled hoopers feel free to let me know if you think I should add or change something. Here are some resources I've found to be useful:
 
 <h4 class="purple">External Resources:</h4>
-<a href="http://www.hooping.org/">Hooping.org</a> - Community forums, tutorials of the day, interviews, etc.
-<a href="http://www.hoop-trix.com/">Hoop Trix</a> - Kinda chaotic web design, but tons of tutorials based off of body parts and skill levels.
-<a href="http://www.etsy.com/listing/60928689/design-your-own-budget-hoop-you-choose">Hoop Mamas Store</a> - My suggested newb hoop due to lots of grip tape. Comes in different sizes/weights and great color selections.
-<a href="http://www.youtube.com/user/babzrobinson">Babz Video Tutorials</a> - Talented hooper that makes tutorials for all skill levels.
-<a href="reddit.com/r/hooping">Reddit's Hooping Community</a> - Wonderful group of hoopers that are helpful and inspiring. My first choice when you need a question answered.
+<a href="http://www.hooping.org/" class="content-link lime>Hooping.org</a> - Community forums, tutorials of the day, interviews, etc.
+<a href="http://www.hoop-trix.com/" class="content-link lime>Hoop Trix</a> - Kinda chaotic web design, but tons of tutorials based off of body parts and skill levels.
+<a href="http://www.etsy.com/listing/60928689/design-your-own-budget-hoop-you-choose" class="content-link lime>Hoop Mamas Store</a> - My suggested newb hoop due to lots of grip tape. Comes in different sizes/weights and great color selections.
+<a href="http://www.youtube.com/user/babzrobinson" class="content-link lime>Babz Video Tutorials</a> - Talented hooper that makes tutorials for all skill levels.
+<a href="reddit.com/r/hooping" class="content-link lime>Reddit's Hooping Community</a> - Wonderful group of hoopers that are helpful and inspiring. My first choice when you need a question answered.
