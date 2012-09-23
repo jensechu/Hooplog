@@ -44,9 +44,9 @@ Please feel free to contact me, leave comments, whatever you want! It would mean
 
 <h4 class="purple">External Resources:</h4>
 <ul>			    
-	<li><a href="http://www.hooping.org/">Hooping.org</a></li> - Community forums, tutorials of the day, interviews, etc.
-	<li><a href="http://www.hoop-trix.com/">Hoop Trix</a></li> - Kinda chaotic web design, but tons of tutorials based off of body parts and skill levels.
-	<li><a href="http://www.etsy.com/listing/60928689/design-your-own-budget-hoop-you-choose"></a>Hoop Mamas Store</li> - My suggested newb hoop due to lots of grip tape. Comes in different sizes/weights and great color selections.
-	<li><a href="http://www.youtube.com/user/babzrobinson"></a> Babz Video Tutorials</li> - Talented hooper that makes tutorials for all skill levels.
-	<li><a href="reddit.com/r/hooping"></a> Reddit's Hooping Community</li> - Wonderful group of hoopers that are helpful and inspiring. My first choice when you need a question answered.
+	<li><a href="http://www.hooping.org/">Hooping.org</a> - Community forums, tutorials of the day, interviews, etc. </li>
+	<li><a href="http://www.hoop-trix.com/">Hoop Trix</a> - Kinda chaotic web design, but tons of tutorials based off of body parts and skill levels. </li>
+	<li><a href="http://www.etsy.com/listing/60928689/design-your-own-budget-hoop-you-choose"></a>Hoop Mamas Store</li> - My suggested newb hoop due to lots of grip tape. Comes in different sizes/weights and great color selections. </li>
+	<li><a href="http://www.youtube.com/user/babzrobinson"></a> Babz Video Tutorials - Talented hooper that makes tutorials for all skill levels. </li>
+	<li><a href="reddit.com/r/hooping"></a> Reddit's Hooping Community - Wonderful group of hoopers that are helpful and inspiring. My first choice when you need a question answered. </li>
 </ul>
