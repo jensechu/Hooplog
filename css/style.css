@@ -274,7 +274,7 @@ div.footer-box {
     font-variant: small-caps;
 }
 
-img.no-border {
+.post .no-border {
     border-bottom: 0px;
 }
 
