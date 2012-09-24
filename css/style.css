@@ -491,7 +491,7 @@ a:hover.content-link {
 }
 
 .dsq-options a {
-    color: #BAF21E;
+    display: none;
 }
 
 .dsq-brlink {
@@ -504,4 +504,8 @@ a:hover.content-link {
 
 .dsq-comment-text {
     color: #bebebe;
+}
+
+.dsq-comment-cite {
+    color: white;
 }
