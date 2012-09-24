@@ -509,3 +509,7 @@ div.dsq-options {
 .dsq-comment-cite a {
     color: white;
 }
+
+.no-border {
+    border: 0px;
+}
