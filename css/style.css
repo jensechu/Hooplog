@@ -506,6 +506,6 @@ a:hover.content-link {
     color: #bebebe;
 }
 
-.dsq-comment-cite {
+.dsq-comment-cite a {
     color: white;
 }
