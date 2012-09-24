@@ -274,6 +274,10 @@ div.footer-box {
     font-variant: small-caps;
 }
 
+img.no-border {
+    border-bottom: 0px;
+}
+
 .post img {
     width: 625px;
     border-bottom: 2px solid #bebebe;
@@ -508,8 +512,4 @@ div.dsq-options {
 
 .dsq-comment-cite a {
     color: white;
-}
-
-.no-border {
-    border: 0px;
 }
